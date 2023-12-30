@@ -1,0 +1,24 @@
+[project]
+name = "result"
+version = "0.1"
+
+[tool.setuptools.package-data]
+result = ["py.typed"]
+
+[tool.black]
+line_length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true
+
+[tool.pylint]
+disable = [
+    "invalid-name",
+    "line-too-long",
+    "missing-docstring",
+    "broad-exception-caught",
+    "logging-fstring-interpolation",
+]
