@@ -2,6 +2,9 @@
 name = "result"
 version = "0.1"
 
+[tool.setuptools.packages.find]
+include = ["result"]
+
 [tool.setuptools.package-data]
 result = ["py.typed"]
 
